@@ -23,7 +23,7 @@ export default function About() {
 
         { /* Background */ }
 
-        <div className="bg-gray-100 min-h-screen py-12">
+        <div className="bg-gray-300 min-h-screen py-12">
       <div className="max-w-5xl mx-auto px-4">
         {/* Flex Container for Image + Text */}
         <div className="flex flex-col md:flex-row items-center md:space-x-8">
