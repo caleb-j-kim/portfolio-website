@@ -17,9 +17,15 @@ export default function Experience() {
           <Link href="/pages/projects" className="cursor-pointer hover:underline">Projects</Link>
           <Link href="/pages/organizations" className="cursor-pointer hover:underline">Organizations</Link>
           <Link href="/pages/experience" className="cursor-pointer hover:underline font-bold">Experience</Link>
+          <Link href="/pages/resume" className="cursor-pointer hover:underline">Resume</Link>
           <Link href="/pages/contact" className="cursor-pointer hover:underline">Contact</Link>
         </div>
         </div>
+
+        { /* Background (add image)*/ }
+      <main className="flext items-center justify-center h-screen bg-gray-300 px-12 py-8">
+        <div className="text-2xl font-bold text-center">Here's my most up-to-date Resume as of November 22nd, 2024!</div>
+      </main>
 
         { /* Footer */ }
       <footer className="bg-gray-800 text-white py-6 px-6 flex items-center justify-between">

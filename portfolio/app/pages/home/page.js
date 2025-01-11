@@ -17,6 +17,7 @@ export default function Home() {
           <Link href="/pages/projects" className="cursor-pointer hover:underline">Projects</Link>
           <Link href="/pages/organizations" className="cursor-pointer hover:underline">Organizations</Link>
           <Link href="/pages/experience" className="cursor-pointer hover:underline">Experience</Link>
+          <Link href="/pages/resume" className="cursor-pointer hover:underline">Resume</Link>
           <Link href="/pages/contact" className="cursor-pointer hover:underline">Contact</Link>
         </div>
       </div>

@@ -1,8 +1,8 @@
-//Organizations Page
+//Resume Page
 
 import Link from "next/link";
 
-export default function Organizations() {
+export default function Resume() {
     return (
         <div>
           { /* Navbar */ }
@@ -15,16 +15,34 @@ export default function Organizations() {
           <Link href="/pages/home" className="cursor-pointer hover:underline">Home</Link>
           <Link href="/pages/about" className="cursor-pointer hover:underline">About</Link>
           <Link href="/pages/projects" className="cursor-pointer hover:underline">Projects</Link>
-          <Link href="/pages/organizations" className="cursor-pointer hover:underline font-bold">Organizations</Link>
+          <Link href="/pages/organizations" className="cursor-pointer hover:underline">Organizations</Link>
           <Link href="/pages/experience" className="cursor-pointer hover:underline">Experience</Link>
-          <Link href="/pages/resume" className="cursor-pointer hover:underline">Resume</Link>
+          <Link href="/pages/resume" className="cursor-pointer hover:underline font-bold">Resume</Link>
           <Link href="/pages/contact" className="cursor-pointer hover:underline">Contact</Link>
         </div>
         </div>
 
         { /* Background (add image)*/ }
       <main className="flext items-center justify-center h-screen bg-gray-300 px-12 py-8">
-        <div className="text-2xl font-bold text-center">Here's my most up-to-date Resume as of November 22nd, 2024!</div>
+        <div className="text-2xl font-bold text-center text-offblack">Here's my most up-to-date Resume as of November, 2024!</div>
+        <div className="mt-4 text-center">
+        <div className="mt-6 flex justify-center">
+  <iframe
+    src="/images/Resume.pdf"
+    width="60%"
+    height="650px"
+    className="border rounded"
+  >
+    {/* If the browser can't display PDFs, provide a fallback */}
+    <p>
+      This browser does not support PDFs. Please download to view:
+      <a href="/images/Resume.pdf">Download PDF</a>.
+    </p>
+  </iframe>
+</div>
+
+</div>
+
       </main>
 
         { /* Footer */ }
