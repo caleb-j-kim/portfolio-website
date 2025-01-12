@@ -1,6 +1,7 @@
 //About Page
 
 import Link from "next/link";
+import FadeIn from "../../components/FadeIn";
 
 export default function About() {
     return (
@@ -23,7 +24,7 @@ export default function About() {
         </div>
 
         { /* Background */ }
-
+        <FadeIn>
         <div className="bg-gray-300 min-h-screen py-12">
       <div className="max-w-5xl mx-auto px-4">
         {/* Flex Container for Image + Text */}
@@ -58,6 +59,7 @@ export default function About() {
 
         </div>
       </div>
+      </FadeIn>
 
         { /* Footer */ }
       <footer className="bg-gray-800 text-white py-6 px-6 flex items-center justify-between">

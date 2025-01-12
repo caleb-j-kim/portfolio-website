@@ -1,6 +1,7 @@
 //Experience Page
 
 import Link from "next/link";
+import FadeIn from "../../components/FadeIn";
 
 export default function Experience() {
     return (
@@ -23,9 +24,11 @@ export default function Experience() {
         </div>
 
         { /* Background (add image)*/ }
+        <FadeIn>
       <main className="flext items-center justify-center h-screen bg-gray-300 px-12 py-8">
         <div className="text-2xl font-bold text-center">Here's my most up-to-date Resume as of November 22nd, 2024!</div>
       </main>
+      </FadeIn>
 
         { /* Footer */ }
       <footer className="bg-gray-800 text-white py-6 px-6 flex items-center justify-between">

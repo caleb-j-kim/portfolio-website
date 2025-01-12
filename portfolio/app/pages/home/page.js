@@ -1,6 +1,7 @@
 //Home Page (cd portfolio -> npm run dev)
 
 import Link from "next/link";
+import FadeIn from "../../components/FadeIn";
 
 export default function Home() {
   return (
@@ -24,9 +25,11 @@ export default function Home() {
 
       { /* Background (add image)*/ }
       <main className="flext items-center justify-center h-screen bg-red-900 px-12 py-8">
+        <FadeIn>
         <h1 className="text-4xl font-bold text-black text-center">Hello, My name is Caleb Kim.
         </h1>
         <div className="text-2xl font-bold text-center">Please interact with the task bar to learn more about me!</div>
+        </FadeIn>
       </main>
 
       { /* Footer */ }

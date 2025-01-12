@@ -1,6 +1,7 @@
 //Contact Page
 
 import Link from "next/link";
+import FadeIn from "../../components/FadeIn";
 
 export default function Contact() {
     return (
@@ -24,6 +25,7 @@ export default function Contact() {
         
         { /* Background */ }
 
+        <FadeIn>
         <div className="bg-gray-300 min-h-screen py-12">
         <h1 className="text-4xl font-bold text-black text-center mb-6">
               Let's Get in Touch!
@@ -71,6 +73,7 @@ export default function Contact() {
             </a>
           </div>
         </div>
+        </FadeIn>
 
         { /* Footer */ }
       <footer className="bg-gray-300 text-white py-6 px-6 flex items-center justify-between">

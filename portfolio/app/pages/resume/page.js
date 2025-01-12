@@ -1,6 +1,7 @@
 //Resume Page
 
 import Link from "next/link";
+import FadeIn from "../../components/FadeIn";
 
 export default function Resume() {
     return (
@@ -23,7 +24,9 @@ export default function Resume() {
         </div>
 
         { /* Background (add image)*/ }
+        
       <main className="flext items-center justify-center h-screen bg-gray-300 px-12 py-8">
+        <FadeIn>
         <div className="text-2xl font-bold text-center text-offblack">Here's my most up-to-date Resume as of November, 2024!</div>
         <div className="mt-4 text-center">
         <div className="mt-6 flex justify-center">
@@ -42,7 +45,7 @@ export default function Resume() {
 </div>
 
 </div>
-
+</FadeIn>
       </main>
 
         { /* Footer */ }
