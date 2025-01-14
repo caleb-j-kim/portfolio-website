@@ -45,7 +45,7 @@ export default function Organizations() {
               <img
                 src="/images/githublogo.png"
                 alt="GitHub"
-                className="w=6 h-6"
+                className="w-6 h-6"
               />
             </a>
             <a
@@ -57,7 +57,7 @@ export default function Organizations() {
               <img
                 src="/images/linkedinlogo.png"
                 alt="LinkedIn"
-                className="w=6 h-6"
+                className="w-6 h-6"
               />
             </a>
             <a 
@@ -67,7 +67,7 @@ export default function Organizations() {
               <img
                 src="/images/emaillogo.png"
                 alt="Email"
-                className="w=6 h-6"
+                className="w-6 h-6"
               />
             </a>
           </div>
