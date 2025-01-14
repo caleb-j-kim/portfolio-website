@@ -30,18 +30,38 @@ export default function Projects() {
 
     {
       title: "ACM Class Registration Chatbot",
+      date: "October - November 2024",
+      tech: "Python, React.js, Scikit-Learn, FastAPI, Pandas, NetworkX, Pydantic, Uvicorn, HTML, CSS, & Numpy.",
+      description: "This was a solo project that I created for ACM UTD as I was collaborating with a fellow Officer in the organization to create a workshop that explored a Machine Learning topic known as Wrapper Methods. They are a specific class of feature selection algorithm that picks out the most important features from a larger set of data, reducing dimensionality of the total amount of features in a given space. As a result, Machine Learning models that use this type of algorithm are able to improve their comprehensibility of learning results and increase their predictive accuracy as the more different each feature is from one another, the better a Machine Learning model can perform. In order to make this workshop entertaining and useful for our intended audience, underclassmen who are new to concepts inside of Machine Learning / AI, I created this chatbot that's designed to make registering for classes easier than the current methods that are provided by our university. The class recommendation sorting algorithm is custom made and is insipred from a Topological Sorting Algorithm which I have learned from my Data Structures & Algorithms class.",
+      image: "/images/acm-chatbot.jpg",
+      repo: "https://github.com/caleb-j-kim/wrappers-chat-bot"
     },
 
     {
       title: "Feelings Behind Words",
+      date: "February - May 2024",
+      tech: "Python, PyTorch, Tensorflow, Scikit-Learn, Pandas, Numpy, BERT, ResNet-18, Keras, Pillow, Matplot-Lib, & Jupyter Notebooks.",
+      description:"During my spring semester of 2024, I was selected to join a team of 4 other students comprising of one team lead and four participants to create a multi-model architecture Artificial Neural Network to determine which form of media would be best fit for a given persuasive technique inside of ACM UTD Research. The dataset we used to test our model contains one folder for specifically text data and another for image data, obtained from the 15th International Workshop on Semantic Evaluation (SemEval 2021). Specifically, there are two models that have been constructed, Model 1 is a Sentiment Analysis model that determines the emotional tone is textual data with the help of Google's language model, BERT. Model 2 is Image Classification model that distinguishes objects in images to perform pattern recognition for sorting / classification and uses a popular Convolutional Neural Network, ResNet-18 to help with feature extraction (determining which data the model should learn from). Our combined model had the overall accuracy of 89.2% and a precision of 87.9% which shows that our multi-model architecture is able to classify data to a specific persuasive technique well. This project was my first time ever working on Machine Learning technology and I was extremely grateful to have this experience as it has opened my eyes to the world of AI and how it can be used to solve real-world problems.",
+      image: "/images/FBW.jpg",
+      repo: "https://github.com/ThejasKumar100/FBW"
     },
 
     {
       title: "Fintasy",
+      date: "February - May 2024",
+      tech: "Vue.js, Python, HTML, CSS, Vite.js, PostgreSQL, Docker, Alpaca API, Fast API, Nginx, Pydantic, & Uvicorn.",
+      description:"This was a group project that I helped create and lead between 6 other students inside of my Software Engineering class where we were assigned to create a Full-Stack application that followed industry methods of developing Software such as Agile Methodology as well as Software testing methods such as Black Box testing. Fintasy is a paper trading website that is aimed to educate those who are new to the world of trading money for stocks with knowledge to develop their own trading strategies without the risk of using real money. For those who already have an idea of what they're doing with trading, Fintasy may be of use to them still as this platform could be used to create better trading strategies or provide a playground to improve on the strategies that are currently employed. The frontend was built using Vue.js, Vite.js, HTML, & CSS while the backend was built using Python as we were planning on adding Machine Learning or AI tools if we had additional time. Fast API was crucial as it allowed us to connect the backend to the frontend with ease and we implemented a custom database with the use of PostGreSQL. The stock data that's used is real world, up-to-date stock data according to our source, Alpaca API and fetch calls to this API are made frequently to ensure that users don't paper trade with outdated information. Fintasy was a great learning experience as I was able to understand how the industry developed Software methods differed from the academic methods that I have been taught in my classes.",
+      image: "/images/fintasy.jpg",
+      repo: "https://github.com/adibarra/fintasy"
     },
 
     {
       title: "Discord Bot",
+      date: "August - September 2023",
+      tech: "Python, Discord API, & Wordnik API.",
+      description:"This was my first offical project that I have ever created as a Software Developer and this was also my first time using an API before. The bot (who I named Scribe) was created using Python and the Discord API, I was inspired to create Scribe because I wanted there to be a way to automate moderation inside of text channels as there may be certain language that people may find unpleasant. Another reason why I wanted to create Scribe was to automatically archieve specific messages that users pinned as the max number of pinned messages that are permitted per text channel in Discord's application is 50 (hence the name). Aside from this purpose, I also decided to create some commands that would fit with Scribe's name such as a 'Word of the Day' which pulls a special word along with its defintiion from Wordnik API, 'Message of the Day' which sends users a message that I have personally encoded inside of Scribe's code, along with commands for moderation such as banning and kicking troublesome members. Working on Scribe opened my eyes to what I could create as a Software Developer and see how it was different from the coding assignments I was required to complete for academia.",
+      image: "/images/discordbot.jpg",
+      repo: "https://github.com/caleb-j-kim/DiscordBot"
     }
   ]
 
