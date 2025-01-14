@@ -1,27 +1,13 @@
 //Contact Page
 
-import Link from "next/link";
+import Navbar from "../../components/Navbar";
 import FadeIn from "../../components/FadeIn";
 
 export default function Contact() {
     return (
         <div>
           { /* Navbar */ }
-          <div className="bg-gray-800 text-white py-8 px-6 flex items-center justify-between">
-            { /* Left side: Logo (WIP) */ }
-            <h1 className="text-xl font-bold">CJK</h1>
-    
-            { /* Right side: Links */ }
-            <div className="flex space-x-6">
-          <Link href="/pages/home" className="cursor-pointer hover:underline">Home</Link>
-          <Link href="/pages/about" className="cursor-pointer hover:underline">About</Link>
-          <Link href="/pages/projects" className="cursor-pointer hover:underline">Projects</Link>
-          <Link href="/pages/organizations" className="cursor-pointer hover:underline">Organizations</Link>
-          <Link href="/pages/experience" className="cursor-pointer hover:underline">Experience</Link>
-          <Link href="/pages/resume" className="cursor-pointer hover:underline">Resume</Link>
-          <Link href="/pages/contact" className="cursor-pointer hover:underline font-bold">Contact</Link>
-        </div>
-        </div>
+          <Navbar />
         
         { /* Background */ }
 
