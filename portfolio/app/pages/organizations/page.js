@@ -49,7 +49,7 @@ const organizations = [
     date: "August 2023 - December 2023",
     position: "Member",
     description: "I joined FGSSA during my junior year as I was the first person in my nuclear family to attend a university and will soon become the first person in my family to have a degree. FGSSA aims to provide resources to those who are the first in their family to attend a university and are majoring in a STEM field. This organization ran semesterly and I was a participant during my time in this organization. Unfortunately, this organization disbanded shortly after the Fall 2023 semester ended.",
-    image: "/images/UTDlogo.png"
+    image: "/images/UTDLogo.png"
   },
 
   {

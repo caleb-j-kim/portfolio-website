@@ -15,7 +15,7 @@ export default function Projects() {
     {
       title: "Portfolio Website",
       date: "December 2024 - January 2025",
-      tech: "Next.js & Tailwind CSS.",
+      tech: "Next.js, Tailwind CSS, & Vercel.",
       description: "I created this website as a way to document and display everything I have done within my time in university and beyond. Ever since I first learned how to code in the year 2021, I have grown tremendously and with this website I aim to showcase the journey I have experienced as a Software Developer. December was when I was initially planning out this project, brainstorming on how I wanted the overall structure and feel of my portfolio to be designed and the first two weeks of January have been dedicated to breathing life into this website. Next.js has been chosen as the backbone for my Front End due to personal preference through exposure of the framework because of a group project. TailWind CSS has been chosen as it works well with UI-based frameworks such as React.js and Next.js but also because it also is known for simplifying design systems. As I progress through life, I aim to make consistent updates to this website when possible.",
       image: "/images/portfoliowebsite.jpg",
       repo: "https://github.com/caleb-j-kim/portfolio-website",
