@@ -100,7 +100,7 @@ const organizations = [
       <h1 className="text-5xl font-extrabold text-center text-offblack">
         {activeOrganization.title}
       </h1>
-      <h2 className="text-xl font-bold text-center text-red-600">
+      <h2 className="text-xl font-bold text-center inter-800 text-red-600">
         {activeOrganization.date}
       </h2>
 
@@ -108,10 +108,10 @@ const organizations = [
 
       <div className="flex flex-col md:flex-row items-center md:space-x-8">
         <div className="md:w-1/2">
-        <div className="text-2xl font-bold py-4 text-slate-700">
+        <div className="text-2xl font-extrabold py-4 poppins-regular text-slate-700">
           Position Held: {activeOrganization.position}
         </div>
-        <div className="text-lg font-semibold text-slate-700">
+        <div className="text-lg font-semibold inter-400 text-slate-700">
           {activeOrganization.description}
           </div>
         </div>

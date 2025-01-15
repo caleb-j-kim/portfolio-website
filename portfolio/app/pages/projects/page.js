@@ -96,7 +96,7 @@ export default function Projects() {
       <h1 className="text-5xl font-extrabold text-center text-offblack">
         {activeProject.title}
       </h1>
-      <h2 className="text-xl font-bold text-center text-red-600">
+      <h2 className="text-xl font-bold text-center inter-800 text-red-600">
         {activeProject.date}
       </h2>
 
@@ -104,10 +104,10 @@ export default function Projects() {
 
       <div className="flex flex-col md:flex-row items-center md:space-x-8">
         <div className="md:w-1/2">
-        <div className="text-2xl font-bold py-4 text-slate-700">
+        <div className="text-2xl font-extrabold py-4 poppins-regular text-slate-700">
           Technologies Used: {activeProject.tech}
         </div>
-        <div className="text-lg font-semibold text-slate-700">
+        <div className="text-lg font-semibold inter-400 text-slate-700">
           {activeProject.description}
           </div>
         </div>

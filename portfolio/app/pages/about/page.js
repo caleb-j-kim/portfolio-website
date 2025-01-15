@@ -28,15 +28,15 @@ export default function About() {
 
           {/* Right column: Text */}
           <div className="md:w-1/2">
-            <h1 className="text-4xl font-bold text-black mb-6">
+            <h1 className="text-4xl font-bold inter-800 text-black mb-6">
               Hi! I'm Caleb.
             </h1>
-            <p className="text-lg text-gray-700 mb-4 leading-relaxed">
+            <p className="text-lg text-gray-700 mb-4 poppins-regular leading-relaxed">
               I’m currently a senior studying Computer Science at the University of Texas at Dallas. Aside from focusing on academia, I am a software
               developer who enjoys many hobbies such as cooking, weightlifting, playing video games, traveling, fishing, photography, and more.
               Throughout my time in university I have been involved in various organizations and have created multiple personal projects as well. 
             </p>
-            <p className="text-lg text-gray-700 mb-4 leading-relaxed">
+            <p className="text-lg text-gray-700 mb-4 poppins-regular leading-relaxed">
               Whether I'm coding a new application, creating or learning a new dish, or exploring the world through my camera lens, I love tackling new
               challenges and sharing what I have learned along the way. Thank you for stopping by - I'm looking forward to connecting, collaborating, and
               growing as not only a developer, but as a person as well.

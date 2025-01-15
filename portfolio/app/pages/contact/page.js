@@ -16,7 +16,7 @@ export default function Contact() {
         <h1 className="text-4xl font-bold text-black text-center mb-6">
               Let's Get in Touch!
             </h1>
-        <div className="text-2xl font-bold text-black text-center">Click on one of these three buttons to connect with me.</div>
+        <div className="text-2xl font-bold text-black poppins-regular text-center">Click on one of these three buttons to connect with me.</div>
         
         { /* Links */ }
           <div className="flex space-x-4 mb-4 py-4 items-center justify-center">

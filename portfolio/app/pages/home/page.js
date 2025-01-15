@@ -13,17 +13,21 @@ export default function Home() {
       { /* Background (add image)*/ }
       <main className="flex flex-col items-center justify-center h-screen bg-red-900 px-12 py-8">
         <FadeIn>
-        <h1 className="text-4xl font-bold text-black text-center py-2">Hello, My name is Caleb Kim.
-        </h1>
+        <div className="flex gap-4">
         <img
           src="/images/temp.jpg"
           alt="Caleb Kim"
           className="max-h-[80vh]
-          w-auto
+          w-6/12
           object-contain
-          mb-8"
+          mb-8 rounded-lg"
         />
-        <div className="text-2xl font-bold text-center">Please interact with the task bar to learn more about me!</div>
+        <br />
+        <h1 className="mt-24 inter-800 text-4xl font-bold text-slate-400 text-left py-2"> <span className="text-white">Hello,</span> 
+        <br /> My name is Caleb Kim.
+        </h1>
+        </ div>
+        <div className="text-2xl font-bold text-center poppins-regular text-offblack">Please interact with the task bar to learn more about me!</div>
         </FadeIn>
       </main>
 
