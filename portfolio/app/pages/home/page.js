@@ -24,10 +24,10 @@ export default function Home() {
         />
         <br />
         <h1 className="mt-24 inter-800 text-4xl font-bold text-slate-400 text-left py-2"> <span className="text-white">Hello,</span> 
-        <br /> My name is Caleb Kim.
+        <br /> My name is Caleb Kim. 
+        <br /> <span className="text-offblack">Interact with the Navigation Bar to learn more about me!</span>
         </h1>
         </ div>
-        <div className="text-2xl font-bold text-center poppins-regular text-offblack">Please interact with the task bar to learn more about me!</div>
         </FadeIn>
       </main>
 
