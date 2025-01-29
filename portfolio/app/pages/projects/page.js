@@ -13,6 +13,15 @@ export default function Projects() {
 
   const projects = [
     {
+      title: "BrainBeats",
+      date: "January 2025",
+      tech: "Swift, Swift UI, Python, AWS S3, suno AI, Figma, Fast API, Next.js, Pydantic, Uvicorn, boto3 & Adobe After Effects.",
+      description: "Introducing BrainBeats, an award-winning iOS application developed for Hack TAMU 2025, where it was honored with the Best Design award. BrainBeats revolutionizes on-the-go learning by leveraging a Generative AI model from Suno AI, combined with our custom Swift frontend, Python backend, and AWS S3 storage. This innovative app allows you to stream personalized songs lasting between 1 to 1.5 minutes in just seconds based on your unique prompts. Whether you’re commuting, exercising, or taking a quick break, BrainBeats enables you to acquire valuable skills in subjects such as Finance, Biology, and more—all without disrupting your daily routines. Experience seamless integration of education and music, making learning both effective and enjoyable anytime, anywhere.",
+      image: "/images/brainbeats.png",
+      repo: "https://github.com/ahadjawaid/tamu-hack-2025"
+    },
+
+    {
       title: "Portfolio Website",
       date: "December 2024 - January 2025",
       tech: "Next.js, Tailwind CSS, & Vercel.",
