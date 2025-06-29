@@ -14,7 +14,7 @@ const organizations = [
 
   {
     title: "Association of Computing Machinery (ACM) UTD",
-    date: "February 2022 - Present",
+    date: "February 2022 - May 2025",
     position: "Co-Director",
     description: "ACM is known as the largest and oldest international scientific and educational computing society in the industry. ACM UTD is the student chapter of ACM at the University of Texas at Dallas and also is known to be the most popular organization for anything related to Computer Science. I initially joined in my second semester of university after seeing a flyer about while walking towards one of my classes inside of the Engineering and Computer Science building. I wouldn't be directly involved with the organization until my junior year where I joined as a participant inside of their Research division in Spring of 2024. Following that semester, I have joined their Education department from the summer of 2024 to December 2024 as an officer, where I am responsible for providing resources to those who want to learn more about professional fields that they can use their technology degrees for. Some of the most popular fields included Software Engineering, Cybersecurity, Data Analysis, and Machine Learning Engineering. Since December, I have been appointed to the position of Co-Director and I will continue to provide said resources along with continuing to create events with fellow organizations, companies such as CBRE, and professors at our university.",
     image: "/images/ACMUTDLogo.png",
@@ -22,7 +22,7 @@ const organizations = [
 
   {
     title: "Filipino Student Association (FSA)",
-    date: "August 2021 - Present",
+    date: "August 2021 - May 2025",
     position: "Family Head",
     description: "FSA was the second organization I have ever joined at UTD and this organization aims to teach people about Filipino culture and about one of their most popular dialects, Tagalog while dividing members up into small communities which were referred to as 'Pamilyas'. Each one of these Pamilyas would have a couple of 'Kuyas & Ates' or 'Older Brothers & Sisters' who would be responsible for taking care of the 'Adings' or 'Younger Brothers & Sisters'. Unlike most other organizations, this organization ran yearly instead of semesterly and I was a Ading my first year along with in this current school year but was a Kuya during my second year. I did not renew my membership with FSA my junior year as I felt like I would not be able to make the time committment necessary to this organization as I had many other oligations to attend to at the time. This organization is a great way for those who are new to the school to meet many new and welcoming people and I hope that FSA continues to stay that way.",
     image: "/images/UTDFSA.png"
