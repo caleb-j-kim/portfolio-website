@@ -17,7 +17,7 @@ export default function Projects() {
       date: "February - May 2025",
       tech: "Python, Scikit-Learn, Flask, React.js, HTML, CSS, AWS S3, AWS DynamoDB, Pandas, NumPy, XGBoost, Matplot-Lib, Tomorrow.io API, & OpenAI API",
       description: "Tomorrow's Weather, a simple yet powerful web application that allows users to predict the climate anywhere, any time. This was my senior project during my undergraduate studies where we were tasked with using Machine Learning to solve a real-world problem where there's difficulty in determining weather predictions past a couple of days. I constructed a Random Forest and Linear Regression to work together in an ensemble method as a Linear Regression model is widely known to excel at calculating trends or patterns while the Random Forest would be able to account for the Linear Regression model's weakness when encountering outliers. My teammates worked on the frontend that displays the data calculated from these models and communicates with users. They also created the AWS S3 Bucket and DynamoDB and my reasoning for using these technologies was because S3 is where we uploaded all of the media that was generated after each prediction while the DynamoDB housed all of the data that was necessary for our models. (Our dataset spanned several centuries of monthly averages all across the world and using cloud storage was my solution for mitigating the amount of resources needed to run this project.) I'm incredibly proud of the work that my team and I put in for this project and I am excited to see how I can top myself next.",
-      image: "/images/tomorrowsweather.jpg",
+      image: "/images/tomorrowsweather.png",
       repo: "https://github.com/caleb-j-kim/climate-change-forecast"
     },
 
