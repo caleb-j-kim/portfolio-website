@@ -14,7 +14,7 @@ export default function Resume() {
         
       <main className="flext items-center justify-center h-screen bg-gray-300 px-12 py-8">
         <FadeIn>
-        <div className="text-2xl font-extrabold text-center poppins-regular text-offblack">Here's my most up-to-date Resume as of June, 2025!</div>
+        <div className="text-2xl font-extrabold text-center poppins-regular text-offblack">Here's my most up-to-date Resume as of July, 2025!</div>
         <div className="mt-4 text-center">
         <div className="mt-6 flex justify-center">
   <iframe
