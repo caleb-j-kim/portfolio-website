@@ -21,7 +21,7 @@ const experience = [
   },
 
   {
-    title: "Software Developer Intern",
+    title: "Software Development Intern",
     subtitle: "TLT - Tomorrow's Leaders Today",
     date: "January - May 2025",
     details: [{ label: "Technologies Used", value: "Next.js, Node.js, Tailwind CSS, SQLite, Prisma, Figma, & Oauth 2.0" }],
