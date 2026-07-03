@@ -22,7 +22,7 @@ export default function Resume() {
                 <h1 className="font-display mt-4 text-3xl font-bold text-foreground sm:text-5xl">
                   Here&apos;s my most up-to-date resume
                 </h1>
-                <p className="mt-3 text-sm text-muted">As of August, 2025</p>
+                <p className="mt-3 text-sm text-muted">As of July, 2026</p>
 
                 <a
                   href="/images/Resume.pdf"
