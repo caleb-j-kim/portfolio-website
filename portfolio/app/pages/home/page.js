@@ -11,7 +11,7 @@ const stack = [
 ]
 
 const stats = [
-  { label: "M.S. Human-Computer Interaction", value: "Georgia Tech" },
+  { label: "M.S. Computer Science (concentration in Human-Computer Interaction)", value: "Georgia Tech" },
   { label: "Personal & team projects shipped", value: "10+" },
   { label: "Current role", value: "Software Developer, AMD" },
 ]
@@ -41,7 +41,7 @@ export default function Home() {
             </h1>
 
             <p className="mx-auto mt-6 max-w-xl text-base leading-relaxed text-muted sm:text-lg">
-              I&apos;m a software developer and graduate student at Georgia Tech studying Human-Computer
+              I&apos;m a software developer and graduate student at Georgia Tech studying Computer Science with a concentration on Human-Computer
               Interaction. I care about shipping thoughtful, well-crafted products &mdash; from machine
               learning pipelines to full-stack web apps.
             </p>
