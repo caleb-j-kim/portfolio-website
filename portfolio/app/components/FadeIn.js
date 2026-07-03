@@ -4,7 +4,7 @@
 
 import { useRef, useEffect, useState } from "react"
 
-export default function FadeIn({ children }) {
+export default function FadeIn({ children, delay = 0, className = "" }) {
   const ref = useRef(null);
   const [isVisible, setIsVisible] = useState(false);
 
@@ -15,7 +15,11 @@ export default function FadeIn({ children }) {
         observer.unobserve(entry.target)
       }
     },
-    { threshold: 0.1 }
+    // A ratio-based threshold (e.g. 0.1) means a block taller than the
+    // viewport may never cross it on initial load, since its own visible
+    // fraction stays small even while most of the viewport is filled with
+    // it. Trigger on any visible pixel instead.
+    { threshold: 0 }
     )
 
     if (ref.current) {
@@ -32,13 +36,15 @@ export default function FadeIn({ children }) {
   return (
     <div
       ref={ref}
+      style={{ transitionDelay: isVisible ? `${delay}ms` : "0ms" }}
       className={`
-        transition-all duration-700 ease-in-out
+        transition-all duration-700 ease-out
         transform
         ${isVisible
           ? "opacity-100 translate-y-0"
           : "opacity-0 translate-y-6"
         }
+        ${className}
       `}
     >
       {children}

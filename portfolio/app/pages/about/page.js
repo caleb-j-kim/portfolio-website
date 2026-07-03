@@ -1,55 +1,88 @@
 //About Page
 
+import Image from "next/image"
 import Navbar from "../../components/Navbar";
 import FadeIn from "../../components/FadeIn";
 import Footer from "../../components/Footer";
+import profile from "../../../public/images/aboutmeimage.jpg"
+
+const interests = [
+  "Cooking", "Weightlifting", "Video Games", "Traveling", "Fishing", "Photography",
+]
 
 export default function About() {
     return (
         <div>
-          { /* Navbar */ }
-        <Navbar />
+          <Navbar />
 
-        { /* Background */ }
-        <FadeIn>
-        <div className="bg-gray-300 min-h-screen py-12">
-      <div className="max-w-5xl mx-auto px-4">
-        {/* Flex Container for Image + Text */}
-        <div className="flex flex-col md:flex-row items-center md:space-x-8">
-          
-          {/* Left column: Image */}
-          <div className="md:w-1/2 mb-8 md:mb-0">
-            <img
-              src="/images/aboutmeimage.jpg"
-              alt="Caleb Kim"
-              className="w-full h-auto object-cover rounded-md shadow-md"
-            />
-          </div>
+          <main className="relative overflow-hidden">
+            <div className="ambient-glow left-[-10%] top-[10%] h-80 w-80 bg-accent/15" />
+            <div className="ambient-glow bottom-[-15%] right-[-10%] h-80 w-80 bg-accentRed/10 animate-float-slow" />
 
-          {/* Right column: Text */}
-          <div className="md:w-1/2">
-            <h1 className="text-4xl font-bold inter-800 text-black mb-6">
-              Hi! I'm Caleb.
-            </h1>
-            <p className="text-lg text-gray-700 mb-4 poppins-regular leading-relaxed">
-              I’m currently a senior studying Computer Science at the University of Texas at Dallas. Aside from focusing on academia, I am a software
-              developer who enjoys many hobbies such as cooking, weightlifting, playing video games, traveling, fishing, photography, and more.
-              Throughout my time in university I have been involved in various organizations and have created multiple personal projects as well. 
-            </p>
-            <p className="text-lg text-gray-700 mb-4 poppins-regular leading-relaxed">
-              Whether I'm coding a new application, creating or learning a new dish, or exploring the world through my camera lens, I love tackling new
-              challenges and sharing what I have learned along the way. Thank you for stopping by - I'm looking forward to connecting, collaborating, and
-              growing as not only a developer, but as a person as well.
-            </p>
+            <div className="mx-auto max-w-content px-6 py-16 sm:py-20">
+              <FadeIn>
+                <span className="inline-flex items-center rounded-full border border-border bg-surface px-3 py-1 text-xs font-medium uppercase tracking-wider text-accent">
+                  About
+                </span>
+                <h1 className="font-display mt-4 text-3xl font-bold text-foreground sm:text-5xl">
+                  Hi! I&apos;m Caleb.
+                </h1>
+              </FadeIn>
+
+              <div className="mt-12 grid grid-cols-1 gap-10 lg:grid-cols-5 lg:items-start">
+                <FadeIn delay={100} className="lg:col-span-2">
+                  <div className="overflow-hidden rounded-2xl border border-border-strong shadow-2xl shadow-black/50">
+                    <Image
+                      src={profile}
+                      alt="Caleb Kim"
+                      className="h-auto w-full object-cover"
+                      placeholder="blur"
+                      priority
+                    />
+                  </div>
+                </FadeIn>
+
+                <FadeIn delay={200} className="lg:col-span-3">
+                  <div className="space-y-5 text-[15px] leading-relaxed text-foreground sm:text-base">
+                    <p>
+                      I&apos;m currently a graduate student studying Computer Science at the Georgia
+                      Institute of Technology, where I&apos;m pursuing a Master&apos;s Degree with a
+                      concentration in Human-Computer Interaction. Previously, I received my Bachelor&apos;s
+                      Degree in Computer Science at the University of Texas at Dallas. Aside from academia,
+                      I&apos;m a software developer who enjoys hobbies like cooking, weightlifting, playing
+                      video games, traveling, fishing, photography, and more. Throughout my time in
+                      university I&apos;ve been involved in various organizations and created multiple
+                      personal projects as well.
+                    </p>
+                    <p>
+                      Whether I&apos;m coding a new application, learning a new dish, or exploring the world
+                      through my camera lens, I love tackling new challenges and sharing what I&apos;ve
+                      learned along the way. Thank you for stopping by &mdash; I&apos;m looking forward to
+                      connecting, collaborating, and growing as not only a developer, but as a person too.
+                    </p>
+                  </div>
+
+                  <div className="mt-8">
+                    <p className="font-display text-xs font-semibold uppercase tracking-wider text-muted">
+                      Outside of work
+                    </p>
+                    <div className="mt-3 flex flex-wrap gap-2">
+                      {interests.map((interest) => (
+                        <span
+                          key={interest}
+                          className="rounded-full border border-border bg-surface px-3 py-1.5 text-xs font-medium text-foreground/80"
+                        >
+                          {interest}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                </FadeIn>
+              </div>
             </div>
-          </div>
+          </main>
 
+          <Footer />
         </div>
-      </div>
-      </FadeIn>
-
-        { /* Footer */ }
-      <Footer />
-    </div>
     )
 }
