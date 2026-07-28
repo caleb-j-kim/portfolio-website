@@ -1,14 +1,20 @@
 "use client"
 
-import { useEffect, useCallback } from "react"
+import { useEffect, useCallback, useState } from "react"
 import Image from "next/image"
-import { ArrowLeft, ArrowRight, ArrowUpRight } from "lucide-react"
+import { ArrowLeft, ArrowRight, ArrowUpRight, ChevronDown } from "lucide-react"
 import FadeIn from "./FadeIn"
 
 // Shared carousel used by the Projects, Organizations, and Experience pages —
 // each one steps through a single array of "cards" one at a time.
 export default function DetailCarousel({ eyebrow, items, activeIndex, onNext, onPrev, onJump }) {
   const active = items[activeIndex]
+  const [showFullDescription, setShowFullDescription] = useState(false)
+
+  // Collapse back to the summary whenever the active card changes.
+  useEffect(() => {
+    setShowFullDescription(false)
+  }, [activeIndex])
 
   const handleKeyDown = useCallback(
     (event) => {
@@ -57,9 +63,31 @@ export default function DetailCarousel({ eyebrow, items, activeIndex, onNext, on
                   <div className="mt-1.5 text-sm leading-relaxed text-foreground/90">{value}</div>
                 </div>
               ))}
-              <div className="mt-6 max-h-80 overflow-y-auto pr-2 text-[15px] leading-relaxed text-foreground/80">
-                {active.description}
-              </div>
+              {active.summary ? (
+                <div className="mt-6">
+                  <button
+                    type="button"
+                    onClick={() => setShowFullDescription((prev) => !prev)}
+                    aria-expanded={showFullDescription}
+                    className="flex w-full cursor-pointer items-center justify-between rounded-lg border border-border bg-elevated px-4 py-2.5 text-left text-xs font-semibold uppercase tracking-wider text-muted transition-colors duration-200 hover:border-border-strong hover:text-foreground"
+                  >
+                    <span>{showFullDescription ? "Full Description" : "Summary"}</span>
+                    <ChevronDown
+                      size={16}
+                      className={`shrink-0 transition-transform duration-200 ${
+                        showFullDescription ? "rotate-180" : ""
+                      }`}
+                    />
+                  </button>
+                  <div className="mt-3 max-h-80 overflow-y-auto pr-2 text-[15px] leading-relaxed text-foreground/80">
+                    {showFullDescription ? active.description : active.summary}
+                  </div>
+                </div>
+              ) : (
+                <div className="mt-6 max-h-80 overflow-y-auto pr-2 text-[15px] leading-relaxed text-foreground/80">
+                  {active.description}
+                </div>
+              )}
             </div>
 
             {active.link && (

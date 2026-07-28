@@ -37,7 +37,7 @@ export default function Resume() {
               <FadeIn delay={150}>
                 <div className="mx-auto mt-10 max-w-3xl overflow-hidden rounded-2xl border border-border-strong bg-elevated shadow-2xl shadow-black/50">
                   <iframe
-                    src="/images/Resume.pdf"
+                    src="/images/Caleb Kim - Resume.pdf"
                     title="Caleb Kim's Resume"
                     className="h-[70vh] w-full sm:h-[80vh]"
                   />
